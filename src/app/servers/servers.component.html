@@ -1,3 +1,8 @@
+<label>Server Name</label>
+<input type="text" class="form-control" [(ngModel)] = "serverName">
+<!-- <p>{{serverName}}</p> -->
+
+<hr>
 <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server</button>
 <!-- <p [innerText]= "allowNewServer"></p> -->
 <!-- <p>{{allowNewServer}}</p>   String Interpolation -->
@@ -5,10 +10,7 @@
 <app-server></app-server>
 <app-server></app-server>
 
-<hr>
+
 <!-- <label>Server Name</label>
 <input type="text" class= "form-control" (input)="onUpdateServerName($event)"> -->
 
-<label>Server Name</label>
-<input type="text" class="form-control" [(ngModel)] = "serverName">
-<p>{{serverName}}</p>
