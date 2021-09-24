@@ -1,1 +1,9 @@
 <p>This is a test for custom component</p>
+
+<p>Assignment 2 </p>
+<label>Username</label>
+<input type="text" class="form-input" [(ngModel)] = "Username">
+<hr>
+<p>{{Username}}</p>
+<button class="btn btn-primary" [disabled] = "Username === ''" (click) ="onResetUsername()"
+>Reset Username</button>
