@@ -15,8 +15,8 @@
 
 </ng-template> -->
 <!-- The * indicates that this is a structural directive, meaning it changes the structure of the DOM -->
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
+
 
 
 <!-- <label>Server Name</label>
