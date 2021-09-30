@@ -10,6 +10,7 @@ import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,11 +18,12 @@ import { SuccessAlertComponent } from './success-alert/success-alert.component';
     TestComponent,
     ServersComponent,
     WarningAlertComponent,
-    SuccessAlertComponent
+    SuccessAlertComponent,
+
   ],
   imports: [
     BrowserModule,
-    FormsModule,    
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,3 +7,17 @@
 <p>{{Username}}</p>
 <button class="btn btn-primary" [disabled] = "Username === ''" (click) ="onResetUsername()"
 >Reset Username</button>
+
+<hr>
+
+<p>Assignment 3</p>
+
+<!-- <button class="btn btn-primary" (click)="showSecret = !showSecret" >Display Details</button> -->
+<button class="btn btn-primary" (click)="onToggleDetails()" >Display Details</button>
+<p *ngIf = "showSecret">Secret Password = Tuna</p>
+<div *ngFor= "let logItem of log"
+ [ngStyle]= "{backgroundColor: logItem>=5 ? 'blue': 'transparent'}"
+ [ngClass] = "{'white-text': logItem>=5}"
+> {{logItem}}</div>
+
+
